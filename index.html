@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Maneesha Salon - Modern Elegance & Style</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Optional: Add custom styles or Tailwind component overrides here */
+        /* Example: Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Example: Custom gradient */
+        .gradient-bg {
+            background: linear-gradient(135deg, #fbcfe8 0%, #fda4af 100%); /* Pink gradient */
+        }
+        /* Example: Subtle animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-pink-600 hover:text-pink-700 transition duration-300">Maneesha Salon</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-600 hover:text-pink-600 transition duration-300">Home</a>
+                <a href="#services" class="text-gray-600 hover:text-pink-600 transition duration-300">Services</a>
+                <a href="#about" class="text-gray-600 hover:text-pink-600 transition duration-300">About</a>
+                <a href="#team" class="text-gray-600 hover:text-pink-600 transition duration-300">Team</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-pink-600 transition duration-300">Testimonials</a>
+                <a href="#contact" class="text-gray-600 hover:text-pink-600 transition duration-300">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-600 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2">
+            <a href="#home" class="block px-6 py-2 text-gray-600 hover:bg-pink-50">Home</a>
+            <a href="#services" class="block px-6 py-2 text-gray-600 hover:bg-pink-50">Services</a>
+            <a href="#about" class="block px-6 py-2 text-gray-600 hover:bg-pink-50">About</a>
+            <a href="#team" class="block px-6 py-2 text-gray-600 hover:bg-pink-50">Team</a>
+            <a href="#testimonials" class="block px-6 py-2 text-gray-600 hover:bg-pink-50">Testimonials</a>
+            <a href="#contact" class="block px-6 py-2 text-gray-600 hover:bg-pink-50">Contact</a>
+        </div>
+    </header>
+
+    <section id="home" class="relative gradient-bg text-white min-h-screen flex items-center justify-center px-6 py-24 text-center overflow-hidden">
+        <div class="relative z-10 fade-in">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">Where Style Meets Elegance</h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">
+                Experience bespoke beauty services in a sanctuary designed for your relaxation and transformation. Let our expert stylists bring out your inner radiance.
+            </p>
+            <a href="#services" class="bg-white text-pink-600 font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105">Explore Our Services</a>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 px-6 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Our Signature Services</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-pink-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 fade-in" style="animation-delay: 0.1s;">
+                    <h3 class="text-2xl font-semibold mb-3 text-pink-700">Creative Hair Styling</h3>
+                    <p class="text-gray-600">From chic cuts and vibrant colors to elegant updos and extensions. Tailored styling for every occasion.</p>
+                </div>
+                <div class="bg-pink-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 fade-in" style="animation-delay: 0.2s;">
+                    <h3 class="text-2xl font-semibold mb-3 text-pink-700">Rejuvenating Facials</h3>
+                    <p class="text-gray-600">Customized facial treatments using premium products to cleanse, hydrate, and revitalize your skin.</p>
+                </div>
+                <div class="bg-pink-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 fade-in" style="animation-delay: 0.3s;">
+                    <h3 class="text-2xl font-semibold mb-3 text-pink-700">Luxury Bridal Packages</h3>
+                    <p class="text-gray-600">Comprehensive beauty solutions for your special day, including makeup, hair, draping, and pre-wedding pampering.</p>
+                </div>
+                <div class="bg-pink-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 fade-in" style="animation-delay: 0.4s;">
+                    <h3 class="text-2xl font-semibold mb-3 text-pink-700">Spa Manicure & Pedicure</h3>
+                    <p class="text-gray-600">Indulge your hands and feet with our relaxing and beautifying mani-pedi treatments in a serene setting.</p>
+                </div>
+                <div class="bg-pink-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 fade-in" style="animation-delay: 0.5s;">
+                    <h3 class="text-2xl font-semibold mb-3 text-pink-700">Smooth Hair Removal</h3>
+                    <p class="text-gray-600">Expert threading and waxing services for precise and comfortable hair removal on face and body.</p>
+                </div>
+                <div class="bg-pink-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 fade-in" style="animation-delay: 0.6s;">
+                    <h3 class="text-2xl font-semibold mb-3 text-pink-700">Advanced Hair Treatments</h3>
+                    <p class="text-gray-600">Solutions for damaged hair, scalp issues, and enhancing hair health with Keratin, Olaplex, and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 px-6 bg-pink-50">
+        <div class="container mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 fade-in">
+                 <div class="bg-gradient-to-br from-pink-200 to-pink-400 h-80 w-full rounded-lg shadow-lg flex items-center justify-center text-white font-bold text-xl">
+                     [Image/Graphic Placeholder]
+                 </div>
+            </div>
+            <div class="md:w-1/2 text-center md:text-left fade-in" style="animation-delay: 0.2s;">
+                <h2 class="text-4xl font-bold mb-6 text-gray-800">Our Story & Philosophy</h2>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                    Founded over a decade ago, Maneesha Salon began with a simple mission: to create a space where beauty, comfort, and personalized attention combine to create a memorable experience. Our team of passionate stylists stays ahead of trends and techniques to offer you the best.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    We believe true beauty radiates from confidence. Our goal is not just to style, but to empower you, making every visit a rejuvenating escape that leaves you feeling fantastic, inside and out.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="py-20 px-6 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12 text-gray-800">Meet Our Expert Stylists</h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div class="text-center fade-in" style="animation-delay: 0.1s;">
+                    <div class="w-32 h-32 rounded-full bg-pink-200 mx-auto mb-4 shadow-md flex items-center justify-center text-pink-600">[Photo]</div>
+                    <h3 class="text-xl font-semibold text-gray-800">Maneesha Silva</h3>
+                    <p class="text-pink-600">Founder & Lead Stylist</p>
+                </div>
+                <div class="text-center fade-in" style="animation-delay: 0.2s;">
+                     <div class="w-32 h-32 rounded-full bg-pink-200 mx-auto mb-4 shadow-md flex items-center justify-center text-pink-600">[Photo]</div>
+                    <h3 class="text-xl font-semibold text-gray-800">Priya Perera</h3>
+                    <p class="text-pink-600">Senior Colorist</p>
+                </div>
+                <div class="text-center fade-in" style="animation-delay: 0.3s;">
+                     <div class="w-32 h-32 rounded-full bg-pink-200 mx-auto mb-4 shadow-md flex items-center justify-center text-pink-600">[Photo]</div>
+                    <h3 class="text-xl font-semibold text-gray-800">Anusha Fernando</h3>
+                    <p class="text-pink-600">Skincare Specialist</p>
+                </div>
+                <div class="text-center fade-in" style="animation-delay: 0.4s;">
+                     <div class="w-32 h-32 rounded-full bg-pink-200 mx-auto mb-4 shadow-md flex items-center justify-center text-pink-600">[Photo]</div>
+                    <h3 class="text-xl font-semibold text-gray-800">Ravi Jayasinghe</h3>
+                    <p class="text-pink-600">Bridal Makeup Artist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-20 px-6 bg-pink-50">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12 text-gray-800">What Our Clients Say</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md fade-in" style="animation-delay: 0.1s;">
+                    <p class="text-gray-600 italic mb-4">"Absolutely loved my experience! The stylists are incredibly talented and friendly. I walked out feeling like a new person. Highly recommend!"</p>
+                    <p class="font-semibold text-pink-600">- Sarah L.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md fade-in" style="animation-delay: 0.2s;">
+                     <p class="text-gray-600 italic mb-4">"Maneesha Salon did my bridal makeup and hair, and it was flawless. They listened to exactly what I wanted and made me feel so calm on my big day."</p>
+                    <p class="font-semibold text-pink-600">- Emily R.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md fade-in" style="animation-delay: 0.3s;">
+                    <p class="text-gray-600 italic mb-4">"Best facial I've ever had! My skin feels amazing. The salon has such a relaxing atmosphere. I'll definitely be back."</p>
+                    <p class="font-semibold text-pink-600">- Jessica P.</p>
+                </div>
+            </div>
+             </div>
+    </section>
+
+    <section id="contact" class="py-20 px-6 bg-white">
+        <div class="container mx-auto max-w-3xl">
+            <h2 class="text-4xl font-bold text-center mb-10 text-gray-800">Get In Touch</h2>
+            <p class="text-center text-lg text-gray-600 mb-10">
+                Have questions or want to book an appointment? Send us a message or give us a call!
+            </p>
+            <div class="grid md:grid-cols-2 gap-10">
+                <form id="contact-form" class="space-y-6 fade-in" style="animation-delay: 0.1s;">
+                    <div>
+                        <label for="name" class="block mb-2 font-medium text-gray-700">Name</label>
+                        <input type="text" id="name" name="name" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-pink-300 focus:border-transparent transition" />
+                    </div>
+                    <div>
+                        <label for="email" class="block mb-2 font-medium text-gray-700">Email</label>
+                        <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-pink-300 focus:border-transparent transition" />
+                    </div>
+                     <div>
+                        <label for="service" class="block mb-2 font-medium text-gray-700">Service of Interest (Optional)</label>
+                        <select id="service" name="service" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-pink-300 focus:border-transparent transition">
+                            <option value="">Select a service...</option>
+                            <option value="Hair Styling">Hair Styling</option>
+                            <option value="Facial">Facial Treatments</option>
+                            <option value="Bridal">Bridal Packages</option>
+                            <option value="Mani/Pedi">Manicure & Pedicure</option>
+                            <option value="Hair Removal">Threading & Waxing</option>
+                            <option value="Hair Treatment">Hair Treatments</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message" class="block mb-2 font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="4" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-pink-300 focus:border-transparent transition"></textarea>
+                    </div>
+                    <div class="text-left">
+                        <button type="submit" class="bg-pink-600 text-white font-semibold px-8 py-3 rounded-lg shadow hover:bg-pink-700 transition duration-300 transform hover:scale-105">Send Message</button>
+                    </div>
+                </form>
+                <div class="space-y-6 fade-in" style="animation-delay: 0.2s;">
+                     <h3 class="text-2xl font-semibold text-gray-800 mb-4">Contact Details</h3>
+                    <p class="text-lg text-gray-600">
+                        <strong>Address:</strong><br>
+                        123 Beauty Lane,<br>
+                        Colombo, Sri Lanka
+                        </p>
+                    <p class="text-lg text-gray-600">
+                        <strong>Phone:</strong> <a href="tel:+94XXXXXXXXX" class="text-pink-600 hover:underline">+94 XX XXX XXXX</a>
+                        </p>
+                     <p class="text-lg text-gray-600">
+                        <strong>Email:</strong> <a href="mailto:info@maneeshasalon.com" class="text-pink-600 hover:underline">info@maneeshasalon.com</a>
+                         </p>
+                    <p class="text-lg text-gray-600">
+                        <strong>Hours:</strong><br>
+                        Mon - Sat: 9:00 AM - 7:00 PM<br>
+                        Sunday: Closed
+                    </p>
+                     </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="gradient-bg text-white py-10 px-6 mt-8">
+        <div class="container mx-auto text-center">
+            <p class="mb-4">&copy; <span id="current-year"></span> Maneesha Salon. All Rights Reserved.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#" class="hover:text-pink-200 transition duration-300">Facebook</a>
+                <a href="#" class="hover:text-pink-200 transition duration-300">Instagram</a>
+                <a href="#" class="hover:text-pink-200 transition duration-300">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Simple Contact Form Handler (replace with actual backend logic)
+        const contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const nameInput = document.getElementById('name');
+                const name = nameInput ? nameInput.value : 'Guest';
+                alert("Thank you, " + name + "! Your message has been received. We will get back to you soon.");
+                // In a real application, you'd send this data to a server
+                e.target.reset();
+            });
+        }
+
+        // Set current year in footer
+         const currentYearSpan = document.getElementById('current-year');
+         if(currentYearSpan) {
+            currentYearSpan.textContent = new Date().getFullYear();
+         }
+
+         // --- Suggestions for p5.js / Three.js Integration ---
+         // Example: p5.js sketch for the hero background
+         /*
+         if (typeof p5 !== 'undefined') {
+             let sketch = function(p) {
+                 p.setup = function() {
+                     let canvas = p.createCanvas(p.windowWidth, p.windowHeight);
+                     canvas.parent('animated-background'); // Attach to the div
+                     canvas.style('position', 'absolute');
+                     canvas.style('top', '0');
+                     canvas.style('left', '0');
+                     canvas.style('z-index', '-1'); // Place behind content
+                 };
+
+                 p.draw = function() {
+                     p.background(255, 192, 203, 5); // Very subtle pink overlay fade
+                     // Add subtle particle effects or generative patterns
+                     p.fill(255, 255, 255, 50); // Semi-transparent white particles
+                     p.noStroke();
+                     for (let i = 0; i < 5; i++) {
+                         p.ellipse(p.random(p.width), p.random(p.height), p.random(1, 4), p.random(1, 4));
+                     }
+                 };
+
+                 p.windowResized = function() {
+                     p.resizeCanvas(p.windowWidth, p.windowHeight);
+                 };
+             };
+             new p5(sketch);
+         }
+         */
+
+         // Example: Triggering animations on scroll
+         // You could use Intersection Observer API for more optimized scroll animations
+         const fadeInElements = document.querySelectorAll('.fade-in');
+         const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                    observer.unobserve(entry.target); // Optional: Animate only once
+                }
+            });
+         }, { threshold: 0.1 }); // Trigger when 10% visible
+
+         fadeInElements.forEach(el => {
+             el.style.animationPlayState = 'paused'; // Start paused
+             observer.observe(el);
+         });
+
+    </script>
+</body>
+</html>
